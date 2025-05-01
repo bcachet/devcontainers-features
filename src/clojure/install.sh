@@ -15,7 +15,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/apt-get-packages:1.0.7" \
-    --option packages='curl,git,build-essential,autoconf'
+    --option packages='curl,git,build-essential,autoconf,automake'
 
 $nanolayer_location \
     install \
