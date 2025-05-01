@@ -1,0 +1,16 @@
+{
+  "test_debian": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "chezmoi": {}
+    }
+  },
+  "test_specific_version": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "chezmoi": {
+        "version": "2.62.2"
+      }
+    }
+  }
+}

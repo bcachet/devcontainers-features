@@ -1,0 +1,16 @@
+{
+  "id": "chezmoi",
+  "version": "1.0.0",
+  "name": "chezmoi",
+  "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/chezmoi",
+  "description": "",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    }
+  },
+  "installsAfter": []
+}
