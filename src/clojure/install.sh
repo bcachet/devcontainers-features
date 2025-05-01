@@ -14,19 +14,19 @@ ensure_nanolayer nanolayer_location "v0.5.6"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/apt-get-packages:1.0.6" \
+    "ghcr.io/devcontainers-extra/features/apt-get-packages:1.0.7" \
     --option packages='curl,git,build-essential,autoconf'
 
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/asdf-package:1.0.8" \
+    "ghcr.io/devcontainers-extra/features/asdf-package:1.0.9" \
     --option plugin='rlwrap'
 
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/asdf-package:1.0.8" \
+    "ghcr.io/devcontainers-extra/features/asdf-package:1.0.9" \
     --option plugin='clojure' --option version="$VERSION"
 
 $nanolayer_location \
