@@ -1,0 +1,18 @@
+{
+  "id": "puppet",
+  "version": "1.0.1",
+  "name": "puppet",
+  "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/puppet",
+  "description": "",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    }
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/ruby:1": {}
+  }
+}
