@@ -1,0 +1,16 @@
+{
+  "id": "clojure",
+  "version": "1.0.3",
+  "name": "clojure",
+  "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/clojure",
+  "description": "",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    }
+  },
+  "installsAfter": []
+}
