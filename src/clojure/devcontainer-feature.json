@@ -1,8 +1,8 @@
 {
-  "id": "chezmoi",
+  "id": "clojure",
   "version": "1.0.0",
-  "name": "chezmoi",
-  "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/chezmoi",
+  "name": "clojure",
+  "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/clojure",
   "description": "",
   "options": {
     "version": {
