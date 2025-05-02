@@ -1,0 +1,28 @@
+{
+  "id": "restish",
+  "version": "1.0.0",
+  "name": "restish",
+  "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/restish",
+  "description": "",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    }
+  },
+  "installsAfter": [],
+  "mounts": [
+    {
+      "source": "/home/bertrand/.pki",
+      "target": "/home/vscode/.pki",
+      "type": "bind"
+    },
+    {
+      "source": "/home/bertrand/.cache/restish",
+      "target": "/home/vscode/.cache/restish",
+      "type": "bind"
+    }
+  ]
+}
