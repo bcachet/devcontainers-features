@@ -11,19 +11,6 @@ source ./library_scripts.sh
 # of the script
 ensure_nanolayer nanolayer_location "v0.5.6"
 
-mkdir -p /home/vscode/.m2
-cat <<EOH /home/vscode/.m2/settings.xml
-<settings>
-    <servers>
-        <server>
-            <id>${ARTIFICATS_ID:exoscale}</id>
-            <username>${ARTIFACTS_USERNAME}</username>
-            <password>${ARTIFACTS_PASSWORD}</password>
-        </server>
-    </servers>
-</settings>
-EOH
-
 $nanolayer_location \
     install \
     devcontainer-feature \
