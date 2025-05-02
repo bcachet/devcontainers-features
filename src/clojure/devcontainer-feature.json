@@ -1,6 +1,6 @@
 {
   "id": "clojure",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "name": "clojure",
   "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/clojure",
   "description": "",
@@ -9,6 +9,24 @@
       "default": "latest",
       "description": "Select the version to install.",
       "proposals": ["latest"],
+      "type": "string"
+    },
+    "artifacts_id": {
+      "default": "exoscale",
+      "description": "Artificats id to setup in maven settings",
+      "proposals": ["exoscale"],
+      "type": "string"
+    },
+    "artifacts_username": {
+      "default": "${localEnv:EXOSCALE_ARTIFACTS_USERNAME}",
+      "description": "Username to configure for artifacts_id in maven settings",
+      "proposals": ["${localEnv:EXOSCALE_ARTIFACTS_USERNAME}"],
+      "type": "string"
+    },
+    "artifacts_password": {
+      "default": "${localEnv:EXOSCALE_ARTIFACTS_PASSWORD}",
+      "description": "Password to configure for artifacts_id in maven settings",
+      "proposals": ["${localEnv:EXOSCALE_ARTIFACTS_PASSWORD}"],
       "type": "string"
     }
   },
