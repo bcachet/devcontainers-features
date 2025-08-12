@@ -9,7 +9,7 @@
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
     "features": {
       "clojure": {
-        "version": "1.12.0"
+        "version": "1.12.1.1550"
       }
     }
   }
