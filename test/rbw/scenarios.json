@@ -2,14 +2,14 @@
   "test_default_version": {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
     "features": {
-      "chezmoi": {}
+      "rbw": {}
     }
   },
   "test_specific_version": {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
     "features": {
-      "chezmoi": {
-        "version": "2.62.2"
+      "rbw": {
+        "version": "1.13.2"
       }
     }
   }

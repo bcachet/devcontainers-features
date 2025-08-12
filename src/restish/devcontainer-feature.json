@@ -1,16 +1,15 @@
 {
   "id": "restish",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "restish",
   "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/restish",
   "description": "",
   "options": {
     "version": {
-      "default": "latest",
+      "default": "0.20.0",
       "description": "Select the version to install.",
-      "proposals": ["latest"],
+      "proposals": ["0.20.0"],
       "type": "string"
     }
-  },
-  "installsAfter": []
+  }
 }

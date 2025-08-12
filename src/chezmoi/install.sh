@@ -14,7 +14,7 @@ ensure_nanolayer nanolayer_location "v0.5.6"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/asdf-package:1.0.8" \
+    "ghcr.io/devcontainers-extra/features/asdf-package:1" \
     --option plugin='chezmoi' --option version="$VERSION"
 
 echo 'Done!'

@@ -4,6 +4,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "something is installed" something --version
+check "rbw is installed" rbw --version
 
 reportResults

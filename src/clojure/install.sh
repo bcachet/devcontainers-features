@@ -14,19 +14,19 @@ ensure_nanolayer nanolayer_location "v0.5.6"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/apt-get-packages:1.0.7" \
+    "ghcr.io/devcontainers-extra/features/apt-get-packages:1" \
     --option packages='rlwrap'
 
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/asdf-package:1.0.9" \
+    "ghcr.io/devcontainers-extra/features/asdf-package:1" \
     --option plugin='clojure' --option version="$VERSION"
 
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/gh-release:1.0.25" \
+    "ghcr.io/devcontainers-extra/features/gh-release:1" \
     --option repo='babashka/babashka' --option binaryNames='babashka'
 
 echo 'Done!'

@@ -2,14 +2,14 @@
   "test_default_version": {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
     "features": {
-      "chezmoi": {}
+      "clojure": {}
     }
   },
   "test_specific_version": {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
     "features": {
-      "chezmoi": {
-        "version": "2.62.2"
+      "clojure": {
+        "version": "1.12.0"
       }
     }
   }

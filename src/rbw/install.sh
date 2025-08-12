@@ -14,10 +14,10 @@ ensure_nanolayer nanolayer_location "v0.5.6"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/gh-release:1.0.25" \
+    "ghcr.io/devcontainers-extra/features/gh-release:1" \
     --option repo='doy/rbw' \
     --option binaryNames='rbw,rbw-agent' \
-    --option libName='etcd' \
+    --option libName='rbw' \
     --option version="$VERSION"
 
 echo 'Done!'
