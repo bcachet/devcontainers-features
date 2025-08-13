@@ -1,6 +1,6 @@
 {
   "id": "puppet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": "puppet",
   "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/puppet",
   "description": "",
@@ -11,8 +11,5 @@
       "proposals": ["latest"],
       "type": "string"
     }
-  },
-  "dependsOn": {
-    "ghcr.io/devcontainers/features/ruby:1": {}
   }
 }
