@@ -1,0 +1,18 @@
+{
+  "id": "cuelang",
+  "version": "1.0.0",
+  "name": "restish",
+  "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/cuelang",
+  "description": "",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["v0.14.1"],
+      "type": "string"
+    }
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/go:1": {}
+  }
+}
