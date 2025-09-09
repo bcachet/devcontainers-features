@@ -6,7 +6,7 @@
   "description": "",
   "options": {
     "version": {
-      "default": "latest",
+      "default": "v0.14.1",
       "description": "Select the version to install.",
       "proposals": ["v0.14.1"],
       "type": "string"
