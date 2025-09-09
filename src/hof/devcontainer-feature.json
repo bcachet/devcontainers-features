@@ -1,14 +1,14 @@
 {
-  "id": "cuelang",
+  "id": "hof",
   "version": "1.0.0",
-  "name": "cuelang",
-  "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/cuelang",
+  "name": "hof",
+  "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/hof",
   "description": "",
   "options": {
     "version": {
       "default": "latest",
       "description": "Select the version to install.",
-      "proposals": ["v0.14.1"],
+      "proposals": ["v0.6.9"],
       "type": "string"
     }
   }

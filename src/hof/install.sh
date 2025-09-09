@@ -14,8 +14,8 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/gh-release:1" \
-    --option repo='cue-lang/cue' \
-    --option binaryNames='cue' \
+    --option repo='hofstadter-io/hof' \
+    --option binaryNames='hof' \
     --option version="$VERSION"
 
 echo 'Done!'
