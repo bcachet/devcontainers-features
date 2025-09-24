@@ -11,17 +11,12 @@ source ./library_scripts.sh
 # of the script
 ensure_nanolayer nanolayer_location "v0.5.6"
 
-ARCH=$(lsb_release -cs)
-curl -o puppet-tools.deb https://apt.puppet.com/puppet-tools-release-${ARCH}.deb
-dpkg -i puppet-tools.deb
-
 $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/apt-get-packages:1" \
-    --option packages='pdk,ruby,ruby-dev'
-
-gem install specific_install
-gem specific_install https://github.com/puppetlabs/puppet-editor-services.git
+    --option packages='ruby,ruby-dev'
+gem install pdk
+gem install puppet-editor-services
 
 echo 'Done!'
