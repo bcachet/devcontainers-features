@@ -1,0 +1,16 @@
+{
+  "id": "mise-auto-install",
+  "version": "1.0.0",
+  "name": "mise-auto-install",
+  "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/mise-auto-install",
+  "description": "Installs mise and runs mise install on container start",
+  "options": {},
+  "installsAfter": ["ghcr.io/devcontainers-extra/features/mise"],
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": []
+    }
+  },
+  "postStartCommand": "mise trust --yes --quiet && mise install --yes"
+}
