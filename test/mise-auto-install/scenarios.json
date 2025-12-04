@@ -1,0 +1,8 @@
+{
+  "test_mise_installed": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "features": {
+      "mise-auto-install": {}
+    }
+  }
+}
