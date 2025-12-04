@@ -1,0 +1,17 @@
+{
+  "id": "bitwarden-ssh-agent",
+  "version": "1.0.0",
+  "name": "bitwarden-ssh-agent",
+  "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/bitwarden-ssh-agent",
+  "description": "",
+  "options": {
+  },
+  "installsAfter": [],
+  "mounts": [
+    {
+      "source": "${localEnv:HOME}/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock",
+      "target": "/tmp/.bitwarden-ssh-agent.sock",
+      "type": "bind"
+    }
+  ]
+}

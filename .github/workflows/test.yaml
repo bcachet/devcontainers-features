@@ -12,6 +12,7 @@ jobs:
     strategy:
       matrix:
         features:
+          - bitwarden-ssh-agent
           - chezmoi
           - clojure
           - cuelang
