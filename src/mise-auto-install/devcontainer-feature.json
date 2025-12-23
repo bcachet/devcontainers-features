@@ -1,6 +1,6 @@
 {
   "id": "mise-auto-install",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "mise-auto-install",
   "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/mise-auto-install",
   "description": "Installs mise and runs mise install on container start",

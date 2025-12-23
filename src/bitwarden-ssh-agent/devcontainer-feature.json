@@ -1,6 +1,6 @@
 {
   "id": "bitwarden-ssh-agent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "bitwarden-ssh-agent",
   "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/bitwarden-ssh-agent",
   "description": "",
