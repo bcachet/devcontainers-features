@@ -1,6 +1,6 @@
 {
   "test_mise_installed": {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "image": "ghcr.io/bcachet/containers/dev:latest",
     "features": {
       "mise-auto-install": {}
     }

@@ -1,12 +1,12 @@
 {
   "test_default_version": {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "image": "ghcr.io/bcachet/containers/dev:latest",
     "features": {
       "chezmoi": {}
     }
   },
   "test_specific_version": {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "image": "ghcr.io/bcachet/containers/dev:latest",
     "features": {
       "chezmoi": {
         "version": "2.62.2"

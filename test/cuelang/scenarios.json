@@ -1,12 +1,12 @@
 {
   "test_default_version": {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "image": "ghcr.io/bcachet/containers/dev:latest",
     "features": {
       "cuelang": {}
     }
   },
   "test_specific_version": {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "image": "ghcr.io/bcachet/containers/dev:latest",
     "features": {
       "cuelang": {
         "version": "v0.14.1"
