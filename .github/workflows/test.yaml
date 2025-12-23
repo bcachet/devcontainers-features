@@ -16,7 +16,6 @@ jobs:
           - chezmoi
           - clojure
           - cuelang
-          - hof
           - mise-auto-install
           - puppet
           - rbw
