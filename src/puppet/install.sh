@@ -14,7 +14,7 @@ ensure_nanolayer nanolayer_location "v0.5.6"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/apt-get-packages:1" \
+    "ghcr.io/devcontainers-extra/features/apt-packages:1" \
     --option packages='ruby,ruby-dev'
 gem install --no-document --minimal-deps pdk puppet-editor-services 
 
