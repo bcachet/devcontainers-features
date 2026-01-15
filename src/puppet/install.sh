@@ -11,8 +11,10 @@ source ./library_scripts.sh
 # of the script
 ensure_nanolayer nanolayer_location "v0.5.6"
 
-wget https://apt.puppetlabs.com/puppet8-release-$(lsb_release -cs).deb
-dpkg -i puppet8-release-$(lsb_release -cs).deb
+PKG="puppet8-release-$(lsb_release -cs).deb"
+wget https://apt.puppetlabs.com/$PKG
+dpkg -i $PKG
+rm -f $PKG
 
 $nanolayer_location \
     install \
