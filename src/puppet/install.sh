@@ -20,6 +20,6 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/apt-get-packages:1" \
-    --option packages='pdk,puppet-lint,ruby,ruby-dev'
+    --option packages='pdk,puppet-lint,ruby,ruby-dev,ruby-bundler,rustc'
 gem install --no-document --minimal-deps puppet-editor-services
 echo 'Done!'
