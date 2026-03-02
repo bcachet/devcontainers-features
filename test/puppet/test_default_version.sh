@@ -6,5 +6,7 @@ source dev-container-features-test-lib
 
 check "pdk is installed" pdk --version
 check "puppet-languageserver is installed" puppet-languageserver --version
+check "puppet-lint is installed" puppet-lint --version
+check "ruby-lsp is installed" ruby-lsp --version
 
 reportResults
