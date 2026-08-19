@@ -13,12 +13,8 @@ jobs:
       matrix:
         features:
           - bitwarden-ssh-agent
-          - chezmoi
-          - clojure
-          - cuelang
           - mise-auto-install
           - puppet
-          - restish
     steps:
       - uses: actions/checkout@v4
 
