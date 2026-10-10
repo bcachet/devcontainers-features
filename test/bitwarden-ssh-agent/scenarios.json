@@ -1,6 +1,6 @@
 {
   "test_env_socket": {
-    "image": "ghcr.io/bcachet/containers/dev:latest",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
     "features": {
       "bitwarden-ssh-agent": {}
     }
