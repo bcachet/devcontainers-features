@@ -13,6 +13,7 @@ jobs:
       matrix:
         features:
           - bitwarden-ssh-agent
+          - mise-install
           - mise-auto-install
           - puppet
     steps:

@@ -1,0 +1,24 @@
+{
+  "test_mise_installed": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "features": {
+      "mise-install": {}
+    }
+  },
+  "test_tools_installed": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "features": {
+      "mise-install": {
+        "tools": "go"
+      }
+    }
+  },
+  "test_multiple_tools_installed": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+    "features": {
+      "mise-install": {
+        "tools": "go,go:golang.org/x/tools/gopls"
+      }
+    }
+  }
+}
