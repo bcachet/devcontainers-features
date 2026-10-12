@@ -14,5 +14,5 @@
       "extensions": []
     }
   },
-  "postStartCommand": "mise trust --yes --quiet && mise install --yes"
+  "postStartCommand": "mise trust --yes --quiet && mise install --yes && echo 'eval \"$(mise activate bash)\"' >> ~/.bashrc"
 }
