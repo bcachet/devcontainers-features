@@ -1,6 +1,6 @@
 {
   "id": "puppet",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "name": "puppet",
   "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/puppet",
   "description": "",
@@ -8,7 +8,9 @@
     "version": {
       "default": "latest",
       "description": "Select the version to install.",
-      "proposals": ["latest"],
+      "proposals": [
+        "latest"
+      ],
       "type": "string"
     }
   }

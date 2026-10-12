@@ -1,6 +1,6 @@
 {
   "id": "mise-install",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "mise-install",
   "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/mise-install",
   "description": "Install list of tools through mise",
@@ -9,8 +9,8 @@
       "default": "",
       "description": "Comma separated list of tools.",
       "proposals": [
-                "clojure",
-                "go,go:golang.org/x/tools/gopls"
+        "clojure",
+        "go,go:golang.org/x/tools/gopls"
       ],
       "type": "string"
     }
