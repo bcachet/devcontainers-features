@@ -1,0 +1,14 @@
+{
+  "name": "devcontainers-features",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "remoteUser": "vscode",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/workspace,type=bind",
+  "workspaceFolder": "/home/vscode/workspace",
+  "features": {
+    "ghcr.io/bcachet/devcontainers-features/mise-install:1": {
+      "tools": "node"
+    },
+    "ghcr.io/bcachet/devcontainers-features/mise-auto-install:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:4": {}
+  }
+}
