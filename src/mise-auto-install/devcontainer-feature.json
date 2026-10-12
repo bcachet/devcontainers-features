@@ -1,6 +1,6 @@
 {
   "id": "mise-auto-install",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "name": "mise-auto-install",
   "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/mise-auto-install",
   "description": "Installs mise and runs mise install on container start",
@@ -14,5 +14,10 @@
       "extensions": []
     }
   },
-  "postStartCommand": "mise trust --yes --quiet && mise install --yes && echo 'eval \"$(mise activate bash)\"' >> ~/.bashrc"
+  "postStartCommand": {
+    "install": "mise trust --yes --quiet && mise install --yes",
+    "bash": "echo 'eval \"$(mise activate bash)\"' >> ~/.bashrc",
+    "zsh": "echo 'eval \"$(mise activate zsh)\"' >> ~/.zshrc",
+    "fish": "mkdir -p ~/.config/fish/ && echo 'mise activate fish | source' >> ~/.config/fish/config.fish"
+  }
 }
