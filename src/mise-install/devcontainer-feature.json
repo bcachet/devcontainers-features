@@ -1,6 +1,6 @@
 {
   "id": "mise-install",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "name": "mise-install",
   "documentationURL": "http://github.com/bcachet/devcontainers-features/tree/main/src/mise-install",
   "description": "Install list of tools through mise",

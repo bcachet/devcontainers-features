@@ -75,4 +75,14 @@ for TOOL in ${TOOLS//,/ }; do
   fi
 done
 
+# Workaround for a BuildKit/podman issue: the devcontainer CLI removes
+# /tmp/dev-container-features/<id> after this script runs. When that nested
+# removal is the last change under /tmp, BuildKit omits the /tmp entry from
+# the feature layer and podman recreates /tmp as 0755 on layer extraction,
+# locking non-root users out of /tmp (e.g. VS Code cannot create
+# /tmp/.X11-unix). Touching a file directly under /tmp forces BuildKit to
+# emit the /tmp entry, preserving its 01777 mode.
+tmp_marker="$(mktemp /tmp/.mise-install-tmp.XXXXXX)"
+rm -f "$tmp_marker"
+
 echo 'Done!'
