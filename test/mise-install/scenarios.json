@@ -1,12 +1,14 @@
 {
   "test_mise_installed": {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu26.04",
+    "remoteUser": "vscode",
     "features": {
       "mise-install": {}
     }
   },
   "test_tools_installed": {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu26.04",
+    "remoteUser": "vscode",
     "features": {
       "mise-install": {
         "tools": "go"
@@ -15,6 +17,7 @@
   },
   "test_multiple_tools_installed": {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu26.04",
+    "remoteUser": "vscode",
     "features": {
       "mise-install": {
         "tools": "go,go:golang.org/x/tools/gopls"

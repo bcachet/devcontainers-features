@@ -6,6 +6,40 @@ echo '---------------------------------------------------------------'
 echo " Mise: Installing $TOOLS"
 echo '---------------------------------------------------------------'
 
+REQUIRED_PACKAGES="curl sudo ca-certificates"
+
+apt_get_update()
+{
+    if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
+        echo "Running apt-get update..."
+        apt-get update -y
+    fi
+}
+
+check_packages() {
+    if ! dpkg -s "$@" > /dev/null 2>&1; then
+        apt_get_update
+        apt-get -y install --no-install-recommends "$@"
+    fi
+}
+
+export DEBIAN_FRONTEND=noninteractive
+
+check_packages $REQUIRED_PACKAGES
+
+install() {
+    curl https://mise.run | MISE_INSTALL_PATH=/usr/local/bin/mise sh
+    eval "$(mise activate bash)"
+    mise doctor
+}
+
+echo "(*) Installing mise-en-place..."
+
+install
+
+# Clean up
+rm -rf /var/lib/apt/lists/*
+
 # tools installed here are shared by every user of the image
 MISE_SYSTEM_DATA_DIR="${MISE_SYSTEM_DATA_DIR:-/usr/local/share/mise}"
 MISE_SYSTEM_CONFIG_DIR="${MISE_SYSTEM_CONFIG_DIR:-/etc/mise}"
@@ -13,16 +47,14 @@ SYSTEM_CONFIG="$MISE_SYSTEM_CONFIG_DIR/config.toml"
 
 # shims must be on PATH in every shell, $PATH must stay unexpanded in those files
 echo "export PATH=$MISE_SYSTEM_DATA_DIR/shims:\$PATH" >/etc/profile.d/mise-shims.sh
-for rc_file in /etc/bash.bashrc /etc/zsh/zshrc /etc/zsh/zshenv; do
-  if [ -f "$rc_file" ]; then
-    echo "export PATH=$MISE_SYSTEM_DATA_DIR/shims:\$PATH" >>"$rc_file"
-  fi
-done
-
-FISH_CONF_DIR="/etc/fish/conf.d"
-if command -v fish >/dev/null 2>&1; then
-  mkdir -p "$FISH_CONF_DIR"
-  echo "fish_add_path $MISE_SYSTEM_DATA_DIR/shims/" >"${FISH_CONF_DIR}/mise-data-dir.fish"
+if [ -f /etc/bash.bashrc ]; then
+  echo 'eval "$(mise activate bash)"' >> /etc/bash.bashrc
+fi
+if [ -f /etc/zsh/zshrc ]; then
+  echo 'eval "$(mise activate bash)"' >> /etc/zsh/zshrc
+fi
+if [ -f /etc/fish/config.fish ]; then
+  echo 'mise activate fish | source' >> /etc/fish/config.fish
 fi
 
 mkdir -p "$MISE_SYSTEM_CONFIG_DIR"
