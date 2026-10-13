@@ -13,7 +13,6 @@ jobs:
       matrix:
         features:
           - mise-install
-          - mise-auto-install
           - puppet
     steps:
       - uses: actions/checkout@v4
